@@ -2,7 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import Layout from '../components/layout'
-// import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
 
 import thumb01 from '../assets/images/thumbs/01.jpg'
@@ -31,8 +30,8 @@ const DEFAULT_IMAGES = [
 class HomeIndex extends React.Component {
 
     render() {
-        const siteTitle = "Gatsby Starter - Strata"
-        const siteDescription = "Site description"
+        const siteTitle = "Portfolio Website - Patrick Steveson"
+        const siteDescription = "Personal portfolio website"
 
         return (
             <Layout>
@@ -45,16 +44,25 @@ class HomeIndex extends React.Component {
 
                     <section id="one">
                         <header className="major">
-                            <h2>Ipsum lorem dolor aliquam ante commodo<br />
-                            magna sed accumsan arcu neque.</h2>
+                            <h2>What I am about</h2>
                         </header>
-                        <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
-                        <ul className="actions">
-                            <li><a href="#" className="button">Learn More</a></li>
-                        </ul>
+                        <p>Hello, I am Patrick Steveson, a Full-Stack Developer, located in Northern Illinois. 
+                            I have always been enthusiastic about technology and its limitless capabilities. 
+                            I enjoy problem solving, improving my skills and have a passion for helping people.
+                            I am very excited about the future of technology and what it will bring.</p>
                     </section>
 
                     <section id="two">
+                        <header>
+                            <h2>Skills</h2>
+                        </header>
+                        <p>I have experience with both front-end and back-end development as well as algorithms and data structures in python.</p>
+                        <ul>
+                            HTML, CSS, Javascript, React, Node.js Express, SQLite, PostgreSQL, Python, Django, Git, Heroku, and Netlify.
+                        </ul>
+                    </section>
+
+                    <section id="three">
                         <h2>Recent Work</h2>
 
                         <Gallery images={DEFAULT_IMAGES.map(({ id, source, thumbnail, caption, description }) => ({
@@ -65,16 +73,16 @@ class HomeIndex extends React.Component {
                         }))} />
 
                         <ul className="actions">
-                            <li><a href="#" className="button">Full Portfolio</a></li>
+                            <li><a href="https://github.com/Mrsteveson" className="button">Other Work</a></li>
                         </ul>
                     </section>
 
-                    <section id="three">
+                    <section id="four">
                         <h2>Get In Touch</h2>
-                        <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+                        <p>Looking for an energetic happy-go-lucky individual for your team? Then I am the developer for you.</p>
                         <div className="row">
                             <div className="8u 12u$(small)">
-                                <form method="post" action="#">
+                                <form method="post" action="mailto:patrick.steveson727@gmail.com">
                                     <div className="row uniform 50%">
                                         <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
                                         <div className="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
@@ -89,17 +97,13 @@ class HomeIndex extends React.Component {
                                 <ul className="labeled-icons">
                                     <li>
                                         <h3 className="icon fa-home"><span className="label">Address</span></h3>
-                                        1234 Somewhere Rd.<br />
-                                        Nashville, TN 00000<br />
+                                        Northern Illinois, 60045<br />
                                         United States
                                     </li>
-                                    <li>
-                                        <h3 className="icon fa-mobile"><span className="label">Phone</span></h3>
-                                        000-000-0000
-                                    </li>
+                                    
                                     <li>
                                         <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
-                                        <a href="#">hello@untitled.tld</a>
+                                        <a href="mailto:patrick.steveson727@gmail.com">patrick.steveson727@gmail.com</a>
                                     </li>
                                 </ul>
                             </div>
