@@ -18,6 +18,19 @@ import full04 from '../assets/images/fulls/04.jpg'
 import full05 from '../assets/images/fulls/05.jpg'
 import full06 from '../assets/images/fulls/06.jpg'
 
+import html from '../assets/images/badges/HTML5.png'
+import css from '../assets/images/badges/css.png'
+import django from '../assets/images/badges/django.png'
+import git from '../assets/images/badges/git.png'
+import heroku from '../assets/images/badges/heroku.png'
+import js from '../assets/images/badges/js.png'
+import netlify from '../assets/images/badges/netlify.png'
+import nodejs from '../assets/images/badges/nodejs.png'
+import pg from '../assets/images/badges/pg.png'
+import python from '../assets/images/badges/python.png'
+import react from '../assets/images/badges/react.png'
+import sql from '../assets/images/badges/sql.png'
+
 const DEFAULT_IMAGES = [
     { id: '1', source: full01, thumbnail: thumb01, caption: 'Photo 1', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
     { id: '2', source: full02, thumbnail: thumb02, caption: 'Photo 2', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
@@ -44,9 +57,9 @@ class HomeIndex extends React.Component {
 
                     <section id="one">
                         <header className="major">
-                            <h2>What I am about</h2>
+                            <h2>What I'm about</h2>
                         </header>
-                        <p>Hello, I am Patrick Steveson, a Full-Stack Developer, located in Northern Illinois. 
+                        <p>Hello, I'm Patrick Steveson, a Full-Stack Developer, located in Northern Illinois. 
                             I have always been enthusiastic about technology and its limitless capabilities. 
                             I enjoy problem solving, improving my skills and have a passion for helping people.
                             I am very excited about the future of technology and what it will bring.</p>
@@ -57,9 +70,67 @@ class HomeIndex extends React.Component {
                             <h2>Skills</h2>
                         </header>
                         <p>I have experience with both front-end and back-end development as well as algorithms and data structures in python.</p>
-                        <ul>
-                            HTML, CSS, Javascript, React, Node.js Express, SQLite, PostgreSQL, Python, Django, Git, Heroku, and Netlify.
-                        </ul>
+                        <div className="badge-cont">
+                            <div className="badges">
+                                <img className="badge" src={html} alt="HTML"/>
+                                <p className="badge-text">HTML5</p>
+                            </div>
+
+                            <div className="badges">
+                                <img className="badge" src={css} alt="CSS"/>
+                                <p className="badge-text">CSS</p>
+                            </div>
+
+                            <div className="badges">
+                                <img className="badge" src={js} alt="Javascript"/>
+                                <p className="badge-text">Javascript</p>
+                            </div>
+
+                            <div className="badges">
+                                <img className="badge" src={react} alt="React"/>
+                                <p className="badge-text">React</p>
+                            </div>
+
+                            <div className="badges">
+                                <img className="badge" src={nodejs} alt="Node.js"/>
+                                <p className="badge-text">Node.js</p>
+                            </div>
+
+                            <div className="badges">
+                                <img className="badge" src={sql} alt="SQLite"/>
+                                <p className="badge-text">SQLite</p>
+                            </div>
+                            
+                            <div className="badges">
+                                <img className="badge" src={pg} alt="PostgreSQL"/>
+                                <p className="badge-text">PostgreSQL</p>
+                            </div>
+
+                            <div className="badges">
+                                <img className="badge" src={python} alt="python"/>
+                                <p className="badge-text">Python</p>
+                            </div>
+
+                            <div className="badges">
+                                <img className="badge" src={django} alt="django"/>
+                                <p className="badge-text">Django</p>
+                            </div>
+
+                            <div className="badges">
+                                <img className="badge" src={git} alt="git"/>
+                                <p className="badge-text">Git</p>
+                            </div>
+
+                            <div className="badges">
+                                <img className="badge" src={netlify} alt="netlify"/>
+                                <p className="badge-text">Netlify</p>
+                            </div>
+
+                            <div className="badges">
+                                <img className="badge" src={heroku} alt="heroku"/>
+                                <p className="badge-text">Heroku</p>
+                            </div>
+                        </div>
                     </section>
 
                     <section id="three">
@@ -79,10 +150,10 @@ class HomeIndex extends React.Component {
 
                     <section id="four">
                         <h2>Get In Touch</h2>
-                        <p>Looking for an energetic happy-go-lucky individual for your team? Then I am the developer for you.</p>
+                        <p>Looking for an energetic happy-go-lucky individual for your team? Then I am the developer for you, I look forward to hearing from you.</p>
                         <div className="row">
                             <div className="8u 12u$(small)">
-                                <form method="post" action="mailto:patrick.steveson727@gmail.com">
+                                <form method="post" action="https://formspree.io/apj2277@gmail.com">
                                     <div className="row uniform 50%">
                                         <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
                                         <div className="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>

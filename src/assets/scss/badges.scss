@@ -1,0 +1,32 @@
+.badge-cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 10%;
+    margin: auto;
+    justify-items: center;
+}
+
+.badges {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    background: white;
+    border-radius: 20%;
+    box-shadow: 0px 1px 10px 4px #000000c7;
+    overflow: hidden;
+}
+
+.badge {
+    padding: 15% 0;
+    width: 75%;
+}
+
+.badge-text {
+    text-align: center;
+    background: gray;
+    color: white;
+    width: 100%;
+    border-radius: 0 0 20% 20%;
+    margin: 0;
+}
