@@ -11,14 +11,14 @@ class Gallery extends Component {
             selectedIndex: 0
         };
         
-        this.toggleLightbox = this.toggleLightbox.bind(this);
+        // this.toggleLightbox = this.toggleLightbox.bind(this);
     }
-    toggleLightbox(selectedIndex) {
-        this.setState(state => ({
-            lightboxIsOpen: !state.lightboxIsOpen,
-            selectedIndex
-        }));
-    }
+    // toggleLightbox(selectedIndex) {
+    //     this.setState(state => ({
+    //         lightboxIsOpen: !state.lightboxIsOpen,
+    //         selectedIndex
+    //     }));
+    // }
     renderGallery (images) {
         if (!images) return;
 
