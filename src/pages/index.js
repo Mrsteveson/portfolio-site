@@ -155,7 +155,7 @@ class HomeIndex extends React.Component {
 
                     <section id="four">
                         <h2>Get In Touch</h2>
-                        <p>Looking for an energetic happy-go-lucky individual for your team? Then I am the developer for you, I look forward to hearing from you.</p>
+                        <p>Looking for an energetic happy-go-lucky individual for your team? Then I am the developer for you, I look forward to hearing from you. Please contact me here, or if you'd prefer email me directly.</p>
                         <div className="row">
                             <div className="8u 12u$(small)">
                                 <form method="post" action="https://formspree.io/apj2277@gmail.com">
