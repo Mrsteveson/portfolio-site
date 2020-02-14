@@ -11,13 +11,6 @@ import journal from '../assets/images/projects/journal.jpg'
 import lookbook from '../assets/images/projects/Lookbook.jpg'
 import techx from '../assets/images/projects/TechX.jpg'
 
-import full01 from '../assets/images/fulls/01.jpg'
-import full02 from '../assets/images/fulls/02.jpg'
-import full03 from '../assets/images/fulls/03.jpg'
-import full04 from '../assets/images/fulls/04.jpg'
-import full05 from '../assets/images/fulls/05.jpg'
-import full06 from '../assets/images/fulls/06.jpg'
-
 import html from '../assets/images/badges/HTML5.png'
 import css from '../assets/images/badges/css.png'
 import django from '../assets/images/badges/django.png'
@@ -32,12 +25,23 @@ import react from '../assets/images/badges/react.png'
 import sql from '../assets/images/badges/sql.png'
 
 const DEFAULT_IMAGES = [
-    { id: '1', source: full01, thumbnail: riy, caption: 'Review It Yourself', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '2', source: full02, thumbnail: cave, caption: 'Cave Escape', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '3', source: full03, thumbnail: treasure, caption: 'Treasure Hunt', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '4', source: full04, thumbnail: techx, caption: 'Tech Xchange', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '5', source: full05, thumbnail: journal, caption: 'LambdaFit', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
-    { id: '6', source: full06, thumbnail: lookbook, caption: 'The Lookbook', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'}
+    { id: '1', thumbnail: riy, caption: 'Review It Yourself', url: "https://review-it-yourself.com/", repo: "https://github.com/labs13-how-to", 
+    description: 'Role: Full-Stack Developer, Tech Stack: Node.js, Express, React, Redux, PostgreSQL, Oauth. Review-It-Yourself is a full-stack web application dedicated to collecting user submitted DIY project, and allowing other users to view and review them to promote helpful and insightful ideas. '},
+
+    { id: '2', thumbnail: cave, caption: 'Cave Escape', url: "https://maze-mud-client.herokuapp.com/", repo: "https://github.com/cs19-maze-mud", 
+    description: 'Role: Full-Stack Developer, Tech Stack: Python, Django, React, Canvas. The Cave Escape is an interactive maze game built using a procedural generation algorithm that creates a random maze for users to explore as well as incorporates the pusher websocket allowing users to communicate to each other as they play. '},
+
+    { id: '3', thumbnail: treasure, caption: 'Treasure Hunt', url: "https://github.com/CS22-TreasureMap/CS-Build-Week-2", repo: "https://github.com/CS22-TreasureMap/CS-Build-Week-2",
+    description: 'Role: Developer, Tech Stack: Python. The Treasure Hunt is a fully automated program that will continuously explore the given map while gathering treasures and coins, utilizing a functional cpu module to operate the various commands. '},
+
+    { id: '4', thumbnail: techx, caption: 'Tech Xchange', url: "https://rentmytech.netlify.com/", repo: "https://github.com/build-week-use-my-tech-stuff/front-end",
+    description: 'Role: Front-End Developer, Tech Stack: React, Redux. Tech Xchange is a new spin on similar applications such as craigslist, specifically targetting tech related offerings. The goal is to connect students and other individuals to professionals seeking to lend their equipment out at a negotiable price providing these individuals access to equipment they otherwise would not have. '},
+
+    { id: '5', thumbnail: journal, caption: 'LambdaFit', url: "https://github.com/weight-lifting-app/Backend", repo: "https://github.com/weight-lifting-app/Backend",
+    description: 'Role: Back-End Developer, Tech Stack: Node.js, Express. LambdaFit is a personal journal application designed for all your workout needs. Record all of your workouts and your exercise details in one centralized location.'},
+
+    { id: '6', thumbnail: lookbook, caption: 'The Lookbook', url: "https://build2artportfolio.github.io/The-Lookbook/", repo: "https://github.com/build2artportfolio/The-Lookbook",
+    description: 'Role: UI-Developer, Tech Stack: Javascript. The Lookbook is an online art portfolio targetting photographers, providing a one-stop location for them to publish and display their work.  '}
 ];
 
 class HomeIndex extends React.Component {
@@ -59,8 +63,9 @@ class HomeIndex extends React.Component {
                         <header className="major">
                             <h2>What I'm about</h2>
                         </header>
-                        <p>Hello, I'm Patrick Steveson, a Full-Stack Developer, located in Northern Illinois. 
-                            I have always been enthusiastic about technology and its limitless capabilities. 
+                        <p>I'm a Full-Stack Developer, located in Northern Illinois. 
+                            I have always been enthusiastic about technology and its limitless capabilities, 
+                            always looking forward to discovering new and exciting frameworks and techniques to improve myself. 
                             I enjoy problem solving, improving my skills and have a passion for helping people.
                             I am very excited about the future of technology and what it will bring.</p>
                     </section>
