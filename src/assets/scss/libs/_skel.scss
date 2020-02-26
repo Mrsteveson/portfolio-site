@@ -324,11 +324,11 @@
 		// Default.
 			.row#{$x} > * { padding: ($r * $multiplier) 0 0 ($c * $multiplier); }
 			.row#{$x} { margin: ($r * $multiplier * -1) 0 -1px ($c * $multiplier * -1); }
-
+			.row#{$x} { display: flex; flex-wrap: wrap;}
 		// Uniform.
 			.row.uniform#{$x} > * { padding: ($c * $multiplier) 0 0 ($c * $multiplier); }
 			.row.uniform#{$x} { margin: ($c * $multiplier * -1) 0 -1px ($c * $multiplier * -1); }
-
+			
 	}
 
 	/// Wraps @content in vendorized keyframe blocks.
