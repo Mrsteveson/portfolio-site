@@ -2,16 +2,6 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
 class Gallery extends Component {
-    constructor () {
-        super();
-
-        this.state = {
-            lightboxIsOpen: false,
-            selectedIndex: 0
-        };
-        
-    }
-
     renderGallery (images) {
         if (!images) return;
 
@@ -19,17 +9,16 @@ class Gallery extends Component {
             console.log(obj)
             return (
                 <article className="6u 12u$(xsmall) work-item" key={i}>
-                    <a
-                        className="image fit thumb"
-                    >
-                        <img src={obj.thumbnail} alt='individual project'/>
+                    <a href={obj.url} className="image fit thumb">
+                        <img src={obj.thumbnail} alt="individual project" className="project"/>
                     </a>
-                    <div className="caption">
+                    <div className="title">
                         <h3>{obj.caption}</h3>
-                        <a href={obj.url} className="icon fa-link"></a>
-                        <a href={obj.repo} className="icon fa-github"></a>
+                        <div className="links">
+                            <a href={obj.url} alt="project url"className="icon fa-link"></a>
+                            <a href={obj.repo} alt="project repo"className="icon fa-github"></a>
+                        </div>      
                     </div>
-                    
                     <p>{obj.description}</p>
                 </article>
             );
@@ -41,6 +30,7 @@ class Gallery extends Component {
             </div>
         );
     }
+     
     render () {
         const { images } = this.props;
         return (

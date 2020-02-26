@@ -940,6 +940,7 @@
 			font-size: 1.35em;
 			line-height: 1.75em;
 			margin: 0;
+			text-shadow: 2px 2px black;
 		}
 
 		.image.avatar {
@@ -994,9 +995,13 @@
 		padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
 		width: calc(100% - #{$size-header-width});
 
+		#three {
+			margin-top: 9em;
+		}
+
 		> section {
 			border-top: solid 2px _palette(border);
-			margin: $size-header-pad 0 8em 0;
+			margin: $size-header-pad 0 4em 0;
 			padding: $size-header-pad 0 0 0;
 
 			&:first-child {
@@ -1005,6 +1010,7 @@
 				padding-top: 0;
 			}
 		}
+
 	}
 
 	@media(max-width: 600px) {
