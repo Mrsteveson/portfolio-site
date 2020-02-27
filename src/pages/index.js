@@ -63,7 +63,7 @@ class HomeIndex extends React.Component {
                         <header className="major">
                             <h2>What I'm about</h2>
                         </header>
-                        <p>I'm a Full-Stack Developer, located in Northern Illinois. 
+                        <p>I'm a Full-Stack Developer located in Northern Illinois. 
                             I have always been enthusiastic about technology and its limitless capabilities, 
                             always looking forward to discovering new and exciting frameworks and techniques to improve myself. 
                             I enjoy problem solving, improving my skills and have a passion for helping people.
@@ -175,7 +175,7 @@ class HomeIndex extends React.Component {
                                 <ul className="labeled-icons">
                                     <li>
                                         <h3 className="icon fa-home"><span className="label">Address</span></h3>
-                                        Northern Illinois, 60045<br />
+                                        Chicagoland Area<br />
                                         United States
                                     </li>
                                     
