@@ -26,7 +26,7 @@ import sql from '../assets/images/badges/sql.png'
 
 const DEFAULT_IMAGES = [
     { id: '1', thumbnail: riy, caption: 'Review It Yourself', url: "https://review-it-yourself.com/", repo: "https://github.com/labs13-how-to", 
-    description: 'Role: Full-Stack Developer, Tech Stack: Node.js, Express, React, Redux, PostgreSQL, Oauth. Review-It-Yourself is a full-stack web application dedicated to collecting user submitted DIY project, and allowing other users to view and review them to promote helpful and insightful ideas. '},
+    description: 'Role: Full-Stack Developer, Tech Stack: Node.js, Express, React, Redux, PostgreSQL, Passport. Review-It-Yourself is a full-stack web application dedicated to collecting user submitted DIY project, and allowing other users to view and review them to promote helpful and insightful ideas. '},
 
     { id: '2', thumbnail: cave, caption: 'Cave Escape', url: "https://maze-mud-client.herokuapp.com/", repo: "https://github.com/cs19-maze-mud", 
     description: 'Role: Full-Stack Developer, Tech Stack: Python, Django, React, Canvas. The Cave Escape is an interactive maze game built using a procedural generation algorithm that creates a random maze for users to explore as well as incorporates the pusher websocket allowing users to communicate to each other as they play. '},
@@ -63,18 +63,21 @@ class HomeIndex extends React.Component {
                         <header className="major">
                             <h2>What I'm about</h2>
                         </header>
-                        <p>I'm a Full-Stack Developer located in Northern Illinois. 
-                            I have always been enthusiastic about technology and its limitless capabilities, 
+                        <p> I have always been enthusiastic about technology and its limitless capabilities. I'm 
                             always looking forward to discovering new and exciting frameworks and techniques to improve myself. 
-                            I enjoy problem solving, improving my skills and have a passion for helping people.
-                            I am very excited about the future of technology and what it will bring.</p>
+                            Currently. learning about aws and other database technologies to make me a more rounded developer. 
+                            I enjoy problem solving and have a passion for helping people.
+                            I am very excited about the future of technology and what it will bring.
+                            I look forward to exploring a variety of projects and languages in my future.</p>
                     </section>
 
                     <section id="two">
                         <header>
                             <h2>Skills</h2>
                         </header>
-                        <p>I have experience with both front-end and back-end development as well as algorithms and data structures in python.</p>
+                        <p>I have experience with both front-end and back-end development having built a variety of full-stack projects. 
+                            As well as knowledge of algorithms and data structures in python. 
+                            In addition, I am currently pursuing my AWS general cloud practitioner certification.</p>
                         <div className="badge-cont">
                             <div className="badges">
                                 <img className="badge" src={html} alt="HTML"/>
