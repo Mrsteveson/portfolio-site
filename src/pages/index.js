@@ -77,7 +77,7 @@ class HomeIndex extends React.Component {
                         </header>
                         <p>I have experience with both front-end and back-end development having built a variety of full-stack projects. 
                             As well as knowledge of algorithms and data structures in python. 
-                            In addition, I am currently pursuing my AWS general cloud practitioner certification.</p>
+                            In addition, I am currently pursuing my AWS cloud practitioner certification.</p>
                         <div className="badge-cont">
                             <div className="badges">
                                 <img className="badge" src={html} alt="HTML"/>
